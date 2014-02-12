@@ -1,4 +1,11 @@
-% Current version: v2.2b
+% Current version: v3.0
+% Author: Wenhao Wu, Kun Wang, Zhi Ding, Chengshan Xiao
+% Email: {wnhwu,kunwang,zding}@ucdavis.edu, xiaoc@mst.edu}
+% Date: 02/12/2014
+% Update:
+%   - Typos
+%
+% Substitute version: v2.2b
 % Author: Wenhao Wu, Kun Wang, Zhi Ding, Chengshan Xiao
 % Email: {wnhwu,kunwang,zding}@ucdavis.edu, xiaoc@mst.edu}
 % Date: 11/02/2013
@@ -75,6 +82,7 @@
 \hyphenation{BS}
 \hyphenation{MS}
 \hyphenation{MIMO}
+\hyphenation{WSR}
 % Title.
 % ------
 \title{Cooperative Multi-Cell MIMO Downlink Precoding for Finite-Alphabet Inputs} % Mod_Ding: Title shortened
@@ -189,9 +197,9 @@ The received signal at the $k$-th MS is given by
     \label{eq:channel}
     \mathbf{y}_k = \mathbf{H}_k\mathbf{x}_k+\sum_{i\not=k}\mathbf{H}_k\mathbf{x}_i+\mathbf{z}_k,\;k=1,\ldots,K
 \end{equation}
-in which $\mathbf{x}_k\in\mathbb{C}^{N_t\times1}$ is the transmitted signal vector intended for the $k$-th MS.
+in which $\mathbf{x}_k\in\mathbb{C}^{N\times1}$ is the transmitted signal vector intended for the $k$-th MS.
 $\mathbf{H}_k\in\mathbb{C}^{N_r\times N}$ is the normalized channel matrix from the virtual BS formed by the set of
-cell BSs to the $k$-th MS with $\mbox{tr}\left(\mathbf{H}_k\mathbf{H}_k^H\right)=N_r$. $\mathbf{z}_k\sim\mathcal{CN}(\mathbf{0},\sigma^2\mathbf{I})$ is receiver
+BSs to the $k$-th MS with $\mbox{tr}\left(\mathbf{H}_k\mathbf{H}_k^H\right)=N_r$. $\mathbf{z}_k\sim\mathcal{CN}(\mathbf{0},\sigma^2\mathbf{I})$ is receiver
 noise. We assume a full cooperative scheme where the channel state information (CSI) is perfectly known to all BSs and MSs involved.
 
 The linear precoding is represented as
@@ -242,7 +250,7 @@ two challenges in the development of our algorithms.  % Mod_Ding: More concised
 
     Gradient descent method is a common way for finding local optima \cite{boyd2004convex}.
 Our obstacle lies in the need to repeatedly evaluate the rate (for finite-alphabet inputs) and its gradient using
-    computationally costly Monte-Carlo. This is particularly costly for MC-MIMO-DLC as the interferences are also finite-alphabetical.
+    computationally costly Monte-Carlo. This is particularly costly for MC-MIMO-DLC as the interferences are also finite-alphabet.
     To tackle this problem, we generalize the approximation for non-interference channel in \cite{zeng2012low} to the interference channel in our problem.
 
     % Mod_Ding: intro and description splitted, more concise
@@ -285,7 +293,7 @@ $    where $\mathbf{c}_{\mathbf{m}_k\mathbf{n}_k}=\mathbf{H}_k\sum_{j\not=k}\mat
            \mathbf{T}_a = \left\{
                              \begin{array}{ll}
                                    \mathbf{I}_{N_{t}} & \mbox{if } \sum_{k=1}^K\|\mathbf{B}_a\mathbf{P}_k\|_F^2 \leq N_t; \\
-                                   \frac{\sqrt{P}\mathbf{I}_{N_{BS}}}{\sum_{k=1}^K\|\mathbf{B}_a\mathbf{P}_k\|_F^2} & \mbox{otherwise.}
+                                   \sqrt{\frac{N_t}{\sum_{k=1}^K\|\mathbf{B}_a\mathbf{P}_k\|_F^2}}\mathbf{I}_{N_t} & \mbox{otherwise.}
                              \end{array}
                           \right.
     \end{equation}
@@ -329,7 +337,7 @@ we align $\mathbf{U}_{\bar{\mathbf{P}}_k}$ to the right singular vectors of $\ba
         \label{eq:ARBDAGDP}
         \bar{R}_k(\mathbf{\Sigma}_{\bar{\mathbf{P}}_k}^2,\mathbf{V}_{\bar{\mathbf{P}}_k}) = \log_2M - \frac{1}{M}\sum_{m=1}^{M}\log_2\sum_{n=1}^Mw_{mn}
     \end{equation}
-    where $w_{mn} = \exp(\mathbf{e}_{mn}^H\mathbf{W}_k\mathbf{e}_{mn}/2\sigma^2)$, $\mathbf{e}_{mn}=\mathbf{s}^{(m)}-\mathbf{s}^{(n)}$ and $\mathbf{W}_k=\mathbf{V}_{\bar{\mathbf{P}}_k}\mathbf{\Sigma}_{\bar{\mathbf{P}}_k}^2\mathbf{\Sigma}_{\bar{\mathbf{H}}_k}^2\mathbf{V}_{\bar{\mathbf{P}}_k}^H$. Its gradient w.r.t $\mathbf{W}_k$ is
+    where $w_{mn} = \exp(-\mathbf{e}_{mn}^H\mathbf{W}_k\mathbf{e}_{mn}/2\sigma^2)$, $\mathbf{e}_{mn}=\mathbf{s}^{(m)}-\mathbf{s}^{(n)}$ and $\mathbf{W}_k=\mathbf{V}_{\bar{\mathbf{P}}_k}\mathbf{\Sigma}_{\bar{\mathbf{P}}_k}^2\mathbf{\Sigma}_{\bar{\mathbf{H}}_k}^2\mathbf{V}_{\bar{\mathbf{P}}_k}^H$. Its gradient w.r.t $\mathbf{W}_k$ is
     \begin{equation}
         \label{eq:gradWARBDAGDP}
         \nabla_{\mathbf{W}_k}\bar{R}_k=\sum_{m=1}^M\frac{\sum_{n=1}^Mw_{mn}(\mathbf{e}_{mn}\mathbf{e}_{mn}^H)}{2\ln2\sigma^2M\sum_{n=1}^Mw_{mn}}.
@@ -410,7 +418,7 @@ In all simulation tests we set
 $A=2$, $N_r = 2$, $\rho=0.6$ and $\mu_k=1/K$.
 Our input signals range from BPSK, QPSK, to  8-PSK modulation.
 
-In the first example we test SGDP against GP1 with $K_1 = K_2 = 1$ and $N_t= 2$. The initial precoders for GP1
+In the first example we test S-GDP against GP1 with $K_1 = K_2 = 1$ and $N_t= 2$. The initial precoders for GP1
 are $\mathbf{P}_k = [\mathbf{0}_{N_t\times N_r};\ldots;\mathbf{I}_{N_t\times N_r};\ldots;\mathbf{0}_{N_t\times N_r}]$ with its $a$-th block as the tall identity matrix, $a$ being the cell
 covering the $k$-th MS.
 We use the results of GP1 as the initial precoders for SGDP.
