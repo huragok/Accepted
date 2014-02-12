@@ -1,0 +1,161 @@
+\begin{thebibliography}{10}
+
+\bibitem{gesbert2010multi}
+D.~Gesbert, S.~Hanly, H.~Huang, S.~S. Shitz, O.~Simeone, and W.~Yu,
+\newblock ``Multi-cell {MIMO} cooperative networks: A new look at
+  interference,''
+\newblock {\em IEEE J. Sel. Areas Commun.}, vol. 28, no. 9, pp. 1380--1408,
+  2010.
+
+\bibitem{yu2007transmitter}
+W.~Yu and T.~Lan,
+\newblock ``Transmitter optimization for the multi-antenna downlink with
+  per-antenna power constraints,''
+\newblock {\em IEEE Trans. Signal Process.}, vol. 55, no. 6, pp. 2646--2660,
+  2007.
+
+\bibitem{huh2009mimo}
+H.~Huh, H.~Papadopoulos, and G.~Caire,
+\newblock ``{MIMO} broadcast channel optimization under general linear
+  constraints,''
+\newblock in {\em Proc. IEEE Int. Symp. Inf. Theory (ISIT)}, June 2009, pp.
+  2664--2668.
+
+\bibitem{christensen2008weighted}
+S.~S. Christensen, R.~Agarwal, E.~Carvalho, and J.~M. Cioffi,
+\newblock ``Weighted sum-rate maximization using weighted {MMSE} for {MIMO-BC}
+  beamforming design,''
+\newblock {\em IEEE Trans. Wireless Commun.}, vol. 7, no. 12, pp. 4792--4799,
+  2008.
+
+\bibitem{fritzsche2013robust}
+R.~Fritzsche and G.~P. Fettweis,
+\newblock ``Robust sum rate maximization in the multi-cell {MU-MIMO}
+  downlink,''
+\newblock in {\em Proc. 2013 IEEE WCNC}, pp. 3180--3184.
+
+\bibitem{wang2012coordinated}
+K.~Wang, X.~Wang, W.~Xu, and X.~Zhang,
+\newblock ``Coordinated linear precoding in downlink multicell {MIMO-OFDMA}
+  networks,''
+\newblock {\em IEEE Trans. Signal Process.}, vol. 60, no. 8, pp. 4264--4277,
+  2012.
+
+\bibitem{zhang2010cooperative}
+R.~Zhang,
+\newblock ``Cooperative multi-cell block diagonalization with per-base-station
+  power constraints,''
+\newblock {\em IEEE J. Sel. Areas Commun.}, vol. 28, no. 9, pp. 1435--1445,
+  2010.
+
+\bibitem{zhang2009networked}
+J.~Zhang, R.~Chen, J.~G. Andrews, A.~Ghosh, and R.~W. Heath,
+\newblock ``Networked {MIMO} with clustered linear precoding,''
+\newblock {\em IEEE Trans. Wireless Commun.}, vol. 8, no. 4, pp. 1910--1921,
+  2009.
+
+\bibitem{venturino2010coordinated}
+L.~Venturino, N.~Prasad, and X.~Wang,
+\newblock ``Coordinated linear beamforming in downlink multi-cell wireless
+  networks,''
+\newblock {\em IEEE Trans. Wireless Commun.}, vol. 9, no. 4, pp. 1451--1461,
+  2010.
+
+\bibitem{zhang2010cooperativeinter}
+R.~Zhang and S.~Cui,
+\newblock ``Cooperative interference management with {MISO} beamforming,''
+\newblock {\em IEEE Trans. Signal Process.}, vol. 58, no. 10, pp. 5450--5458,
+  2010.
+
+\bibitem{perez2010mimo}
+F.~P{\'e}rez-Cruz, M.~R.~D. Rodrigues, and S.~Verd{\'u},
+\newblock ``{MIMO} {Gaussian} channels with arbitrary inputs: {Optimal}
+  precoding and power allocation,''
+\newblock {\em IEEE Trans. Inf. Theory}, vol. 56, no. 3, pp. 1070--1084, 2010.
+
+\bibitem{xiao2011globally}
+C.~Xiao, Y.~R. Zheng, and Z.~Ding,
+\newblock ``Globally optimal linear precoders for finite alphabet signals over
+  complex vector {Gaussian} channels,''
+\newblock {\em IEEE Trans. Signal Process.}, vol. 59, no. 7, pp. 3301--3314,
+  2011.
+
+\bibitem{wu2012linear}
+Y.~Wu, M.~Wang, C.~Xiao, Z.~Ding, and X.~Gao,
+\newblock ``Linear precoding for {MIMO} broadcast channels with finite-alphabet
+  constraints,''
+\newblock {\em IEEE Trans. Wireless Commun.}, vol. 11, no. 8, pp. 2906--2920,
+  2012.
+
+\bibitem{wang2011linear}
+M.~Wang, W.~Zeng, and C.~Xiao,
+\newblock ``Linear precoding for {MIMO} multiple access channels with finite
+  discrete inputs,''
+\newblock {\em IEEE Trans. Wireless Commun.}, vol. 10, no. 11, pp. 3934--3942,
+  2011.
+
+\bibitem{liang2012linear}
+X.~Liang, Z.~Ding, and C.~Xiao,
+\newblock ``On linear precoding of non-regenerative {MIMO} relays for {QAM}
+  inputs,''
+\newblock in {\em Proc. IEEE Int. Conf. Commun.}, June 2012, pp. 2439--2444.
+
+\bibitem{zeng2012linearrelay}
+W.~Zeng, Y.~R. Zheng, M.~Wang, and J.~Lu,
+\newblock ``Linear precoding for relay networks: a perspective on
+  finite-alphabet inputs,''
+\newblock {\em IEEE Trans. Wireless Commun.}, vol. 11, no. 3, pp. 1146--1157,
+  2012.
+
+\bibitem{liang2011sequential}
+X.~Liang, C.~Zhao, and Z.~Ding,
+\newblock ``Sequential linear {MIMO} precoder optimization for hybrid {ARQ}
+  retransmission of {QAM} signals,''
+\newblock {\em IEEE Commun. Lett.}, vol. 15, no. 9, pp. 913--915, 2011.
+
+\bibitem{wu2012linearMIMOME}
+Y.~Wu, C.~Xiao, Z.~Ding, X.~Gao, and S.~Jin,
+\newblock ``Linear precoding for finite-alphabet signaling over {MIMOME}
+  wiretap channels,''
+\newblock {\em IEEE Trans. Veh. Technol.}, vol. 61, no. 6, pp. 2599--2612,
+  2012.
+
+\bibitem{zeng2012low}
+W.~Zeng, C.~Xiao, and J.~Lu,
+\newblock ``A low-complexity design of linear precoding for {MIMO} channels
+  with finite-alphabet inputs,''
+\newblock {\em IEEE Wireless Commun. Lett.}, vol. 1, no. 1, pp. 38--41, 2012.
+
+\bibitem{palomar2006tutorial}
+D.~P. Palomar and M.~Chiang,
+\newblock ``A tutorial on decomposition methods for network utility
+  maximization,''
+\newblock {\em IEEE J. Sel. Areas Commun.}, vol. 24, no. 8, pp. 1439--1451,
+  2006.
+
+\bibitem{boyd2004convex}
+S.~P. Boyd and L.~Vandenberghe,
+\newblock {\em Convex optimization},
+\newblock Cambridge university press, 2004.
+
+\bibitem{hjorungnes2011complex}
+A.~Hj{\o}rungnes,
+\newblock {\em Complex-valued matrix derivatives: with applications in signal
+  processing and communications},
+\newblock Cambridge University Press, 2011.
+
+\bibitem{zhang2004cochannel}
+H.~Zhang and H.~Dai,
+\newblock ``Cochannel interference mitigation and cooperative processing in
+  downlink multicell multiuser {MIMO} networks,''
+\newblock {\em EURASIP Journal on Wireless Communications and Networking}, vol.
+  2004, no. 2, pp. 222--235, 2004.
+
+\bibitem{payaro2009optimal}
+M.~Payar{\'o} and D.~P. Palomar,
+\newblock ``On optimal precoding in linear vector {Gaussian} channels with
+  arbitrary input distribution,''
+\newblock in {\em Proc. IEEE Int. Symp. Inf. Theory (ISIT)}, 2009, pp.
+  1085--1089.
+
+\end{thebibliography}
